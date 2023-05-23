@@ -4,7 +4,7 @@ using namespace std;
 
 int BinarySearch(int arr[],int n,int key){
     int s=0;
-    int e=n;
+    int e=n-1;
     while(s<=e){
         int mid=(s+e)/2;
         
@@ -15,7 +15,7 @@ int BinarySearch(int arr[],int n,int key){
             e=mid-1;
         }
         else{
-            mid+1;
+            s=mid+1;
         }
         
     }
